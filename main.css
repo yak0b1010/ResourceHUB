@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+
+body {
+    font-family: 'JetBrains Mono';
+    background-color: #08192e;
+    user-select: none;
+    overflow-x: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.prompt {
+   
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    padding: .5vh;
+   
+}
+.prompt input {
+    font-family: 'JetBrains Mono';
+    width: 100%;
+    border-radius: 20px;
+    padding: 2vh;
+    color: #ffb300;
+    background: #1b2735;
+    box-shadow: 0 0 10px #ffb300, 0 0 40px #ffb300;
+    margin-left: 100px;
+    margin-left: 12px;
+}
+.prompt svg {
+    margin: 3vh 6vh 3vh 4vh;
+    
+}
+.prompt .home a{
+    text-decoration: none;
+    background: #ffb300;
+    padding: 5px 15px;
+    margin: 15px;
+    color: #08192e;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: 800;
+
+}
+.UserMessage p {
+    background: #dbdbdb;
+    padding: 2vh;
+    border-radius: 2vh;
+    max-width: 90vh;
+}
+.UserMessage {
+    order: 1;
+    margin-left: auto;
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: 1vh;
+    align-items: flex-start;
+    align-self: flex-end;
+}
+
+.UserImage p img {
+    background: #dbdbdb;
+    padding: 1vh;
+    border-radius: 2vh;
+    width: 60vh;
+}
+
+.BotMessage {
+    order: 1;
+    margin-left: auto;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: 1vh;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.BotMessage p {
+    background: #ffffff;
+    padding: 2vh;
+    border-radius: 2vh;
+    max-width: 90vh;
+    user-select: text; 
+}
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.1;
+}
+.convo {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 80vh;
+    overflow: auto;
+    margin: 1vh;
+    position: relative;
+    top: -4vh;
+
+}
+
+
