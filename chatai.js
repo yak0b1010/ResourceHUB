@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
-const genAI = new GoogleGenerativeAI("AIzaSyAXDAfPcqQWPq5qPR3hmZ5Juj_3kEp7I3o");
+const genAI = new GoogleGenerativeAI("Your-API key");
 async function fileToGenerativePart(file) {
   const base64EncodedDataPromise = new Promise((resolve) => {
     const reader = new FileReader();
